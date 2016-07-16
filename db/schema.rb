@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160716211450) do
+ActiveRecord::Schema.define(version: 20160716214902) do
 
   create_table "ocrs", force: :cascade do |t|
     t.string   "image_ref"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "gen_text"
   end
 
 end

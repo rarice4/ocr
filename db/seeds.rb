@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Ocr.create(image_ref:"http://d1x6zkqyb2gtqn.cloudfront.net/wp-content/uploads/2010/09/DelicataSaladRecipe_Web.jpg")

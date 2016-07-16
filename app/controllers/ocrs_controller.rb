@@ -15,6 +15,7 @@ class OcrsController < ApplicationController
 
   # POST /ocrs
   def create
+    puts "hitting create" 
     @ocr = Ocr.new(ocr_params)
 
     if @ocr.save
