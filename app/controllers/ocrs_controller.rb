@@ -15,6 +15,9 @@ class OcrsController < ApplicationController
 
   # POST /ocrs
   def create
+    # TODO: gemfile add https://github.com/meh/ruby-tesseract-ocr/issues/24
+    # ENV['CFLAGS'] = '-I/usr/local/Cellar/tesseract/3.02.02/include -I/usr/local/Cellar/leptonica/1.69/include' 
+    # ENV['LDFLAGS'] = '-L/usr/local/Cellar/tesseract/3.02.02/lib -L/usr/local/Cellar/leptonica/1.69/lib'
     puts "hitting create"
 
     @ocr = Ocr.new(ocr_params)
