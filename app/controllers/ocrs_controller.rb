@@ -15,9 +15,10 @@ class OcrsController < ApplicationController
 
   # POST /ocrs
   def create
-    puts "hitting create" 
-    @ocr = Ocr.new(ocr_params)
+    puts "hitting create"
 
+    @ocr = Ocr.new(ocr_params)
+    puts @ocr.getHostedImage(ocr_params.image_ref) 
     if @ocr.save
       render json: @ocr, status: :created, location: @ocr
     else
